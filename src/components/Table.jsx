@@ -8,6 +8,7 @@ function Table(props) {
         <thead>
           <tr>
             <th scope='col'>#</th>
+            <th scope='col'>Picture</th>
             <th scope='col'>First</th>
             <th scope='col'>Last</th>
             <th scope='col'>Phone</th>
