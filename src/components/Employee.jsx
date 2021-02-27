@@ -16,7 +16,7 @@ function Employee() {
         {getEmployees.map((employee) => (
           <>
             {console.log(employee)}
-            <TableRows firstName={employee.name.first} />
+            <TableRows firstName={employee.name.first} lastName={employee.name.last} phone={employee.phone} />
           </>
         ))}
       </Table>
