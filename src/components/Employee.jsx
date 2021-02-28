@@ -13,10 +13,19 @@ function Employee() {
   return (
     <div>
       <Table>
-        {getEmployees.map((employee) => (
+        {getEmployees.map((employee, index) => (
           <>
             {console.log(employee)}
-            <TableRows pic={employee.picture.thumbnail} firstName={employee.name.first} lastName={employee.name.last} phone={employee.phone} />
+            <TableRows
+              index={index + 1}
+              pic={employee.picture.thumbnail}
+              title={employee.name.title}
+              firstName={employee.name.first}
+              lastName={employee.name.last}
+              phone={employee.phone}
+              email={employee.email}
+              country={employee.location.country}
+            />
           </>
         ))}
       </Table>
