@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import getRandomEmployees from '../utils/API';
-import Table from './Table';
-import TableRows from './TableRows';
+import Table from '../components/Table';
+import TableRows from '../components/TableRows';
+import FilterInput from '../components/FilterInput';
 
-function Employee() {
+function Main() {
   const [getEmployees, setGetEmployees] = useState([]);
 
   useEffect(() => {
@@ -12,6 +13,7 @@ function Employee() {
 
   return (
     <div>
+      <FilterInput />
       <Table>
         {getEmployees.map((employee, index) => (
           <>
@@ -33,4 +35,4 @@ function Employee() {
   );
 }
 
-export default Employee;
+export default Main;

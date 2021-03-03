@@ -1,10 +1,11 @@
 import React from 'react';
-import Employee from './components/Employee';
+import Main from './pages/Main';
+import FilterInput from './components/FilterInput';
 
 function App() {
   return (
     <div className='App'>
-      <Employee />
+      <Main />
     </div>
   );
 }
