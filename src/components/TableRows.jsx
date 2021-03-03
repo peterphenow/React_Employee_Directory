@@ -3,7 +3,7 @@ import React from 'react';
 function TableRows(props) {
   return (
     <tr>
-      <th scope='row'>{props.index}</th>
+      <th key={props.index}>{props.index}</th>
       <td>
         <img src={props.pic} alt={`${props.firstName} ${props.lastName}`}></img>
       </td>
