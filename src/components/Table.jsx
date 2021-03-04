@@ -6,14 +6,28 @@ function Table(props) {
       <table className='table'>
         <thead>
           <tr>
-            <th scope='col'>#</th>
+            <th scope='col' onClick={props.sortTable}>
+              #
+            </th>
             <th scope='col'>Picture</th>
-            <th scope='col'>Title</th>
-            <th scope='col'>First</th>
-            <th scope='col'>Last</th>
-            <th scope='col'>Phone</th>
-            <th scope='col'>Email</th>
-            <th scope='col'>Country</th>
+            <th scope='col' onClick={props.sortTable}>
+              Title
+            </th>
+            <th scope='col' onClick={props.sortTable}>
+              First
+            </th>
+            <th scope='col' onClick={props.sortTable}>
+              Last
+            </th>
+            <th scope='col' onClick={props.sortTable}>
+              Phone
+            </th>
+            <th scope='col' onClick={props.sortTable}>
+              Email
+            </th>
+            <th scope='col' onClick={props.sortTable}>
+              Country
+            </th>
           </tr>
         </thead>
         <tbody>{props.children}</tbody>
