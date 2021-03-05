@@ -23,7 +23,7 @@ function Table(props) {
               Phone
             </th>
             <th scope='col' onClick={props.sortTable}>
-              Email
+              Email(click to sort!)
             </th>
             <th scope='col' onClick={props.sortTable}>
               Country
